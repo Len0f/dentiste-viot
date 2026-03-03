@@ -1,10 +1,30 @@
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --bleu: #2a6b8f;
+  --bleu-clair: #e8f4f8;
+  --bleu-mid: #4a90a4;
+  --corail: #e8856a;
+  --texte: #2c3e50;
+  --gris: #6b7a8a;
+  --blanc: #ffffff;
+  --fond: #f9fbfc;
+  --border: #dce8ed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+  line-height: 1.6;
 }
