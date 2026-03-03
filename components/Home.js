@@ -126,12 +126,7 @@ function Popup({ children, onClose }) {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className={styles.popup}>
-        <button className={styles.popupCloseTop} onClick={onClose}>
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
-        {children}
-      </div>
+      <div className={styles.popup}>{children}</div>
     </div>
   );
 }
